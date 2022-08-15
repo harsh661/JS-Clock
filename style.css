@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
 }
 
 span {
@@ -29,9 +30,23 @@ span {
 
 @media screen and (max-width: 800px) {
     .container {
-        font-size: 4rem;
+        font-size: 6rem;
+    }
+    span {
+        min-width: 170px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 3.5rem;
     }
     span {
         min-width: 110px;
     }
+}
+@media screen and (max-width: 400px) {
+    #sec {
+        font-size: 2rem;
+    }
+    
 }
